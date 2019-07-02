@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'backand',
+	'hostname' => 'sql103.byethost.com',
+	'username' => 'b32_24072443',
+	'password' => 'bsibsd',
+	'database' => 'b32_24072443_perpus',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

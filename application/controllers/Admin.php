@@ -83,8 +83,8 @@ class Admin extends CI_Controller
       $lokasi = $this->input->post('lokasi');
       $status = $this->input->post('status');
       $this->form_validation->set_rules('id_kategori','Kategori','required');
-      $this->form_validation->set_rules('judul_buku','Judul Buku','required');
-      $this->form_validation->set_rules('status','Status Buku','required');
+      $this->form_validation->set_rules('judul_buku','Judul buku','required');
+      $this->form_validation->set_rules('status','Status buku','required');
       if($this->form_validation->run() != false){
         //configurasi upload Gambar
         $config['upload_path'] = './assets/upload/';
@@ -149,14 +149,14 @@ class Admin extends CI_Controller
       $status = $this->input->post('status');
 
       $this->form_validation->set_rules('id_kategori','ID Kategori','required');
-      $this->form_validation->set_rules('judul_buku','Judul Buku','required|min_length[4]');
+      $this->form_validation->set_rules('judul_buku','Judul buku','required|min_length[4]');
       $this->form_validation->set_rules('pengarang','Pengarang','required|min_length[4]');
       $this->form_validation->set_rules('penerbit','Penerbit','required|min_length[4]');
       $this->form_validation->set_rules('thn_terbit','Tahun Terbit','required|min_length[4]');
       $this->form_validation->set_rules('isbn','Nomor ISBN','required|numeric');
-      $this->form_validation->set_rules('jumlah_buku','Jumlah Buku','required|numeric');
-      $this->form_validation->set_rules('lokasi','Lokasi Buku','required|min_length[4]');
-      $this->form_validation->set_rules('status','Status Buku','required');
+      $this->form_validation->set_rules('jumlah_buku','Jumlah buku','required|numeric');
+      $this->form_validation->set_rules('lokasi','Lokasi buku','required|min_length[4]');
+      $this->form_validation->set_rules('status','Status buku','required');
 
       if($this->form_validation->run() != false){
           $config['upload_path'] = './assets/upload/';
@@ -320,7 +320,7 @@ class Admin extends CI_Controller
         $tgl_kembali = $this->input->post('tgl_kembali');
         $denda = $this->input->post('denda');
         $this->form_validation->set_rules('anggota','Anggota','required');
-        $this->form_validation->set_rules('buku','Buku','required');
+        $this->form_validation->set_rules('buku','buku','required');
         $this->form_validation->set_rules('tgl_pinjam','Tanggal Pinjam','required');
         $this->form_validation->set_rules('tgl_kembali','Tanggal Kembali','required');
         $this->form_validation->set_rules('denda','Denda','required');
